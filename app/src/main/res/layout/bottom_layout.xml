@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/translucent"
+    android:orientation="horizontal"
+    android:id="@+id/bottom_layout"
+
+    tools:context="com.example.tk.music_mvc.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/find_music_layout"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/find_music"/>
+        
+        <TextView
+            android:id="@+id/find_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发现音乐"
+            android:textColor="@color/bottom_muen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_music_layout"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/my_music_icon"
+            android:layout_width="50px"
+            android:layout_height="50px" 
+            android:src="@drawable/my_music"/>
+        
+        <TextView
+            android:id="@+id/my_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的音乐"
+            android:textColor="@color/bottom_muen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/friend_layout"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/friend"/>
+        
+        <TextView
+            android:id="@+id/firend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="朋友"
+            android:textColor="@color/bottom_muen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/account_layout"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal">
+        
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px" 
+            android:src="@drawable/account"/>
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号"
+            android:textColor="@color/bottom_muen"
+            />
+
+    </LinearLayout>
+        
+    
+
+    
+
+    
+
+
+
+
+</LinearLayout>
