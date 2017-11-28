@@ -1,11 +1,16 @@
 package com.example.tk.music_mvc.mymusic.model;
 
+import java.io.Serializable;
+
 /**
  * Created by User on 2017/11/27.
  */
 
-public class MusicModel {
+public class MusicModel implements Serializable{
 
+
+
+    private static final long serialVersionUID = 1L;
     private String name;
     private String artist;
     private long duration;
@@ -51,5 +56,10 @@ public class MusicModel {
     public void setPath(String path) {
         this.path = path;
     }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
 
 }
