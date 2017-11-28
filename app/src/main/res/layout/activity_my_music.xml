@@ -22,11 +22,10 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <fragment
+    <FrameLayout
         android:id="@+id/my_music_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:name="com.example.tk.music_mvc.mymusic.view.MyMusicFragment"
         />
 
 </LinearLayout>

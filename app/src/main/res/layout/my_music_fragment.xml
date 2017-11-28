@@ -7,13 +7,46 @@
     <ListView
         android:id="@+id/my_music_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="240dp">
 
     </ListView>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:text="我创建的歌单(1)"/>
+        android:layout_height="25dp"
+        android:gravity="center_vertical"
+        android:text="       我创建的歌单(1)"
+        android:textColor="#A8A8A8"
+        android:background="#EBEBEB"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/sheet_image"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/sheet_image"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/sheet_image"
+            android:id="@+id/sheet_title"
+            android:gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="我喜欢的音乐"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_below="@+id/sheet_title"
+            android:layout_toRightOf="@+id/sheet_image"
+            android:gravity="top"
+            android:id="@+id/sheet_count"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="8首"
+            android:textColor="#BDBDBD"/>
+    </RelativeLayout>
 
 </LinearLayout>
