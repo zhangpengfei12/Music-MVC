@@ -1,11 +1,9 @@
 package com.example.tk.music_mvc.mymusic.view;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 
 import com.example.tk.music_mvc.R;
 
@@ -14,7 +12,7 @@ import com.example.tk.music_mvc.R;
  */
 
 public class MyMusicActivity extends AppCompatActivity {
-    private MyMusicFragment myMusicFragment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,9 +1,6 @@
 package com.example.tk.music_mvc.mymusic.view;
 
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.Fragment;
-import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,7 +19,6 @@ import com.example.tk.music_mvc.mymusic.model.MyMusicModel;
 public class MyMusicFragment extends Fragment {
     private MyMusicListAdapter adapter;
     private MyMusicModel myMusicModel;
-    private Context mContext;
     private ListView listView;
 
     @Override
@@ -41,7 +37,7 @@ public class MyMusicFragment extends Fragment {
                     case 0:
                         getActivity().getSupportFragmentManager()
                                 .beginTransaction()
-                                .replace(R.id.my_music_fragment, new MusicFragment(), null)
+                                .replace(R.id.my_music_fragment, new MusicListFragment(), null)
                                 .addToBackStack(null)
                                 .commit();
                 }

@@ -4,4 +4,6 @@
     <string name="toolbar_height">50dp</string>
     <string name="music_player_icon1">50px</string>
     <string name="music_player_icon2">100px</string>
+
+
 </resources>
