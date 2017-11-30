@@ -1,4 +1,4 @@
-package com.example.tk.music_mvc.mymusic.view;
+package com.example.tk.music_mvc.mymusic.controller;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;

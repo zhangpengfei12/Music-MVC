@@ -1,11 +1,13 @@
-package com.example.tk.music_mvc.mymusic.view;
+package com.example.tk.music_mvc.mymusic.controller;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.tk.music_mvc.R;
@@ -22,7 +24,7 @@ import java.util.List;
 public class MusicListFragment extends Fragment {
     private ListView listView;
     private MusicDetailAdaptor adaptor;
-    List<MusicModel> list;
+    private List<MusicModel> list;
 
 
     @Override
@@ -31,10 +33,26 @@ public class MusicListFragment extends Fragment {
 
         listView = (ListView)view.findViewById(R.id.music_detail_list_layout);
 
-
         list = MusicUtil.getMusicData(getActivity());
         adaptor = new MusicDetailAdaptor(list , getActivity());
         listView.setAdapter(adaptor);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                MusicFragment mf = new MusicFragment();
+
+                Bundle bundle = new Bundle();
+                bundle.putInt("position",position);
+                mf.setArguments(bundle);
+
+                FragmentManager manager = getFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.my_music_fragment,mf,null);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
 
         return view;
     }

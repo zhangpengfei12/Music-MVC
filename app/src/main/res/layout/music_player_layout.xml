@@ -102,20 +102,27 @@
                 android:layout_weight="1"/>
 
             <ImageView
+                android:id="@+id/previous"
                 android:layout_width="100px"
                 android:layout_height="100px"
+                android:onClick="onClick"
+
                 android:src="@drawable/ic_previous"
                 android:layout_weight="1"/>
 
             <ImageView
+                android:id="@+id/play"
                 android:layout_width="100px"
                 android:layout_height="100px"
+                android:onClick="onClick"
                 android:src="@drawable/ic_play"
                 android:layout_weight="1"/>
 
             <ImageView
+                android:id="@+id/next"
                 android:layout_width="100px"
                 android:layout_height="100px"
+                android:onClick="onClick"
                 android:src="@drawable/ic_next"
                 android:layout_weight="1"/>
 
