@@ -13,6 +13,7 @@
 
 
         <ImageView
+            android:id="@+id/background"
             android:layout_centerInParent="true"
             android:layout_width="200dp"
             android:layout_height="200dp"
@@ -106,7 +107,6 @@
                 android:layout_width="100px"
                 android:layout_height="100px"
                 android:onClick="onClick"
-
                 android:src="@drawable/ic_previous"
                 android:layout_weight="1"/>
 
@@ -115,7 +115,7 @@
                 android:layout_width="100px"
                 android:layout_height="100px"
                 android:onClick="onClick"
-                android:src="@drawable/ic_play"
+                android:src="@drawable/pause"
                 android:layout_weight="1"/>
 
             <ImageView
